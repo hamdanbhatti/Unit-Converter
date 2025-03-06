@@ -75,3 +75,9 @@ if st.button("Convert"):
         st.success(f"Converted Value: {result:.2f} {unit_to}")  # Display result with 2 decimal places
     else:
         st.error("Conversion not supported between these units!")  # Show error for unsupported conversions
+hide_github_icon = """
+    <style>
+        footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
